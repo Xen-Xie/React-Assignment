@@ -58,41 +58,41 @@ function Slider() {
     <section className="relative flex flex-col items-center text-center p-6 max-w-2xl mx-auto">
       <button
         onClick={() => prevSlide(true)}
-        className={`hidden md:flex absolute left-0 md:-left-12 top-1/2 transform -translate-y-1/2 p-2 rounded-full transition-all duration-300 ${
-          clicked === "left" ? "bg-cyan-400" : "bg-gray-700 hover:bg-gray-600"
+        className={`hidden md:flex absolute left-0 md:-left-12 top-1/2 transform -translate-y-1/2 p-2 rounded-lg transition-all duration-300 ${
+          clicked === "left" ? "bg-primary" : "bg-[#96ACAF]/20 hover:bg-gray-600"
         }`}
       >
-        <ChevronLeft className="w-6 h-6 text-white" />
+        <ChevronLeft className="w-6 h-6 text-foreground" />
       </button>
 
       <button
         onClick={() => nextSlide(true)}
-        className={`hidden md:flex absolute right-0 md:-right-12 top-1/2 transform -translate-y-1/2 p-2 rounded-full transition-all duration-300 ${
-          clicked === "right" ? "bg-cyan-400" : "bg-gray-700 hover:bg-gray-600"
+        className={`hidden md:flex absolute right-0 md:-right-12 top-1/2 transform -translate-y-1/2 p-2 rounded-lg transition-all duration-300 ${
+          clicked === "right" ? "bg-primary" : "bg-[#96ACAF]/20 hover:bg-gray-600"
         }`}
       >
-        <ChevronRight className="w-6 h-6 text-white" />
+        <ChevronRight className="w-6 h-6 text-foreground" />
       </button>
 
       <div className="flex justify-center items-center mb-4 opacity-100 transition-opacity duration-700">
         <img src={sliderData[currentIndex].image} alt="Quote Icon" className="w-12" />
       </div>
 
-      <p className="text-lg text-gray-300 max-w-2xl px-6 opacity-100 transition-opacity duration-700">
+      <p className="text-lg text-foreground max-w-2xl px-6 opacity-100 transition-opacity duration-700">
         {sliderData[currentIndex].pg}
       </p>
 
-      <h3 className="text-lg font-semibold text-cyan-400 mt-4">
+      <h3 className="text-lg font-semibold text-primary mt-4">
         {sliderData[currentIndex].name}
       </h3>
-      <p className="text-gray-400 text-sm">{sliderData[currentIndex].occupation}</p>
+      <p className="text-[#96ACAF] text-sm">{sliderData[currentIndex].occupation}</p>
 
       <div className="flex gap-2 mt-6">
         {sliderData.map((_, index) => (
           <div
             key={index}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              currentIndex === index ? "bg-cyan-400" : "bg-gray-500"
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              currentIndex === index ? "bg-primary" : "bg-[#394648]"
             }`}
           ></div>
         ))}
