@@ -12,6 +12,7 @@ import NavBar from './Components/NavBar'
 import Partners from './Components/Partners'
 import CardArea from './Components/CardArea';
 import Train from './Components/Train';
+import SliderArea from './Components/SliderArea';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Partners />
       <CardArea />
       <Train />
+      <SliderArea />
       
 
     </>
