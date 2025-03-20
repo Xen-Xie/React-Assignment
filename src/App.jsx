@@ -13,6 +13,7 @@ import Partners from './Components/Partners'
 import CardArea from './Components/CardArea';
 import Train from './Components/Train';
 import SliderArea from './Components/SliderArea';
+import PercentageArea from './Components/PercentageArea';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <CardArea />
       <Train />
       <SliderArea />
+      <PercentageArea />
       
 
     </>
