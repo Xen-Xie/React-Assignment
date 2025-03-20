@@ -35,7 +35,7 @@ function PercentageArea() {
                                 <h1 className='text-primary font-bold text-2xl md:text-3xl lg:text-4xl'>
                                     {item.percent}
                                 </h1>
-                                <p className='max-w-[200px] text-[#E9EEF1] leading-tight'>
+                                <p className='max-w-[200px] text-[#E9EEF1] leading-tight py-2'>
                                     {item.texts}
                                 </p>
                             </div>
