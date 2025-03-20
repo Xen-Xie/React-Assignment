@@ -7,15 +7,15 @@ import { fab } from '@fortawesome/free-brands-svg-icons';  // Brand icons
 library.add(fas, far, fab);
 
 import './App.css'
-import Hero from './Components/Hero'
+import { Routes, Route } from "react-router-dom";
+
 import NavBar from './Components/NavBar'
-import Partners from './Components/Partners'
-import CardArea from './Components/CardArea';
-import Train from './Components/Train';
-import SliderArea from './Components/SliderArea';
-import PercentageArea from './Components/PercentageArea';
-import GetStart from './Components/GetStart';
+
 import Footer from './Components/Footer';
+import About from './Components/Routers/About'
+import Pricing from './Components/Routers/Pricing'
+import Customers from './Components/Routers/Customers'
+import Solutions from './Components/Routers/Solutions'
 
 
 function App() {
@@ -23,13 +23,13 @@ function App() {
   return (
     <>
       <NavBar />
-      <Hero />
-      <Partners />
-      <CardArea />
-      <Train />
-      <SliderArea />
-      <PercentageArea />
-      <GetStart />
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/customers" element={<Customers />} />
+        <Route path="/solutions" element={<Solutions />} />
+      </Routes>
+      
       <Footer />
       
 
