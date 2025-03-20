@@ -14,6 +14,7 @@ import CardArea from './Components/CardArea';
 import Train from './Components/Train';
 import SliderArea from './Components/SliderArea';
 import PercentageArea from './Components/PercentageArea';
+import GetStart from './Components/GetStart';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Train />
       <SliderArea />
       <PercentageArea />
+      <GetStart />
       
 
     </>
