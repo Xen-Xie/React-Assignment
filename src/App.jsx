@@ -10,6 +10,7 @@ import './App.css'
 import Hero from './Components/Hero'
 import NavBar from './Components/NavBar'
 import Partners from './Components/Partners'
+import CardArea from './Components/CardArea';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <NavBar />
       <Hero />
       <Partners />
+      <CardArea />
 
     </>
   )
