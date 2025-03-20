@@ -24,7 +24,7 @@ function Train() {
     <div className="relative flex items-center min-h-[40vh] px-6 md:px-20 bg-[#07292F] bg-right bg-cover mx-3 rounded-lg justify-center max-w-screen-sm md:max-w-full">
         <div className="space-y-3">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold">Train your aiDR on your...</h1>
-            <h1 className="italic font-semibold text-lg text-primary">preferred email style</h1>
+            <h1 className="italic font-semibold text-lg text-primary">prefered email st|</h1>
             <p className="text-foreground max-w-[300px] leading-tight">
                 You’re in control. Train your aiDR on elements of your Marketing strategy.
             </p>
