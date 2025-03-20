@@ -11,6 +11,7 @@ import Hero from './Components/Hero'
 import NavBar from './Components/NavBar'
 import Partners from './Components/Partners'
 import CardArea from './Components/CardArea';
+import Train from './Components/Train';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
       <Hero />
       <Partners />
       <CardArea />
+      <Train />
+      
 
     </>
   )
